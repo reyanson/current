@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from 'react'
+import Logo from '../../public/logo.svg'
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,7 +38,8 @@ export function Navigation() {
             transition={{ delay: 0.2 }}
             className="text-white text-xl font-medium"
           >
-            &lt;DevPortfolio /&gt;
+            {/* &lt;DevPortfolio /&gt; */}
+            <img src={Logo} alt="" width={'100px'} />
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
